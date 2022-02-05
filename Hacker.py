@@ -66,7 +66,7 @@ LIVE_CHATS = []
 
 START_TEXT = """
 ━━━━━━━━━━━━━━━━━━━━━━━━
-⛦➪ Hello, <b>{}</b> 𝖨 𝖺𝗆 𝖲𝗎𝗉𝖾𝗋 𝖥𝖺𝗌𝗍 𝖬𝗎𝗌𝗂𝖼 𝖯𝗅𝖺𝗒𝖾𝗋  𝖡𝗈𝗍 𝖥𝗈𝗋 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖦𝗋𝗈𝗎𝗉𝗌 𝖠𝗅𝗅𝗈𝗐 𝖸𝗈𝗎 𝖳𝗈 𝖯𝗅𝖺𝗒 𝖬𝗎𝗌𝗂𝖼 𝖠𝗇𝖽 𝖵𝗂𝖽𝖾𝗈 𝖮𝗇 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆  𝖵𝗂𝖽𝖾𝗈...
+⛦➪ Hello, <b>{}</b> ➪ 𝖨 𝖺𝗆 𝖲𝗎𝗉𝖾𝗋 𝖥𝖺𝗌𝗍 𝖬𝗎𝗌𝗂𝖼 𝖯𝗅𝖺𝗒𝖾𝗋  𝖡𝗈𝗍 𝖥𝗈𝗋 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖦𝗋𝗈𝗎𝗉𝗌 𝖠𝗅𝗅𝗈𝗐 𝖸𝗈𝗎 𝖳𝗈 𝖯𝗅𝖺𝗒 𝖬𝗎𝗌𝗂𝖼 𝖠𝗇𝖽 𝖵𝗂𝖽𝖾𝗈 𝖮𝗇 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆  𝖵𝗂𝖽𝖾𝗈..⛦
 """
 
 START_BUTTONS = InlineKeyboardMarkup(
@@ -75,8 +75,8 @@ START_BUTTONS = InlineKeyboardMarkup(
             InlineKeyboardButton("➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-            InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-            InlineKeyboardButton(",Chitchat 📨", url="https://t.me/UNIQUE_society")
+            InlineKeyboardButton("🔐 Commands", callback_data="cbcmds"),
+            InlineKeyboardButton("Chitchat 📨", url="https://t.me/UNIQUE_society")
         ],
         [
             InlineKeyboardButton("🚑 Support", url="https://t.me/Blaze_Support"),
@@ -88,8 +88,8 @@ START_BUTTONS = InlineKeyboardMarkup(
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="🚑 Support", url="https://t.me/UNIQUE_SOCIETY"),
-            InlineKeyboardButton(text="Updates 📢", url="https://t.me/Blaze_Support")
+            InlineKeyboardButton(text="⌜Տᴜᴘᴘᴏʀᴛ", url="https://t.me/UNIQUE_ENGLISH_SOCIETY"),
+            InlineKeyboardButton(text="Ⴎᴘᴅᴀᴛᴇs⌟", url="https://t.me/Blaze_Support")
         ]
     ]
 )
@@ -203,7 +203,7 @@ async def yt_audio(link):
 async def cbcmds(_, query: CallbackQuery):
     await query.answer("Commands Menu")
     await query.edit_message_text(
-        f"""➣ Hello » **List of Available Commands **
+        f"""➣ Hello » ** Lɪsᴛ ᴏғ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs **
 ➪ /play (Song Name/Link) - Play Music
 ➪ /vplay (video name/link) - Play Video
 ➪ /pause - Pause The Song
@@ -215,13 +215,13 @@ async def cbcmds(_, query: CallbackQuery):
 ➪ /unmute - UnMute The Assistant On Voice Chat
 ➪ /playlist - Show You The Playlist
 ➪ /restart - Restart The Bot
-⛦➪ Powered By- [TEAM BLAZE](t.me/Team_Blaze_xD) """)
+⛦➪📢 Powered By- [Ꭲᴇᴀᴍ ᗷʟᴀᴢᴇ 🇮🇳](t.me/Team_Blaze_xD) """)
 
 
 @bot.on_message(filters.command("start") & filters.private)
 async def start_private(_, message):
     msg = START_TEXT.format(message.from_user.mention)
-    await message.reply_photo(photo="https://telegra.ph/file/8fddb775d567de8a63940.jpg",
+    await message.reply_photo(photo="https://telegra.ph/file/d16449d4ee27da8afd4f8.jpg",
                              caption = msg,
                              reply_markup = START_BUTTONS)
     
@@ -243,8 +243,8 @@ async def join_chat(c: Client, m: Message):
 
 @bot.on_message(filters.command("start") & filters.group)
 async def start_group(_, message):
-    await message.reply_photo(photo="https://telegra.ph/file/8fddb775d567de8a63940.jpg",
-                              caption = f"Hello 🦋 {message.from_user.mention} 🎧 𝐌𝐮𝐬𝐢𝐜 𝐏𝐥𝐚𝐲𝐞𝐫 𝐈𝐬 𝐑𝐮𝐧𝐧𝐢𝐧𝐠.",
+    await message.reply_photo(photo="https://telegra.ph/file/d16449d4ee27da8afd4f8.jpg",
+                              caption = f"Hello 🦋 {message.from_user.mention} 🎧 Music Player is Running.",
                               reply_markup = BUTTONS)
 
 
