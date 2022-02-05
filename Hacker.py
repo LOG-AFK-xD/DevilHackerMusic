@@ -1,26 +1,3 @@
-"""
-MIT License
-
-Copyright (c) 2022 LEGEND RAJ
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-"""
 
 import os
 import glob
@@ -66,21 +43,21 @@ LIVE_CHATS = []
 
 START_TEXT = """
 ━━━━━━━━━━━━━━━━━━━━━━━━
-⛦➪ Hello, <b>{}</b> ➪ 𝖨 𝖺𝗆 𝖲𝗎𝗉𝖾𝗋 𝖥𝖺𝗌𝗍 𝖬𝗎𝗌𝗂𝖼 𝖯𝗅𝖺𝗒𝖾𝗋  𝖡𝗈𝗍 𝖥𝗈𝗋 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖦𝗋𝗈𝗎𝗉𝗌 𝖠𝗅𝗅𝗈𝗐 𝖸𝗈𝗎 𝖳𝗈 𝖯𝗅𝖺𝗒 𝖬𝗎𝗌𝗂𝖼 𝖠𝗇𝖽 𝖵𝗂𝖽𝖾𝗈 𝖮𝗇 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆  𝖵𝗂𝖽𝖾𝗈..⛦
+⛦➪ Hᴇʟʟᴏ, <b>{}</b>
+⛦➪ I Aᴍ Sᴜᴘᴇʀ Fᴀsᴛ Mᴜsɪᴄ Pʟᴀʏᴇʀ Bᴏᴛ Fᴏʀ Tᴇʟᴇɢʀᴀᴍ Gʀᴏᴜᴘ. Aʟʟᴏᴡ  Yᴏᴜ Tᴏ Pʟᴀʏ Mᴜsɪᴄ Aɴᴅ Vɪᴅᴇᴏ Oɴ Tᴇʟᴇɢʀᴀᴍ...!
 """
-
 START_BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+            InlineKeyboardButton("➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕", url=f"https://t.me/Khushi_Ro_Bot?startgroup=true")
         ],
         [
-            InlineKeyboardButton("🔐 Commands", callback_data="cbcmds"),
-            InlineKeyboardButton("Chitchat 📨", url="https://t.me/UNIQUE_society")
+            InlineKeyboardButton("🔐 Cᴏᴍᴍᴀɴᴅs", callback_data="cbcmds"),
+            InlineKeyboardButton("Cʜɪᴛᴄʜᴀᴛ 📨", url="https://t.me/UNIQUE_English_society")
         ],
         [
-            InlineKeyboardButton("🚑 Support", url="https://t.me/Blaze_Support"),
-            InlineKeyboardButton("Updates 📢", url="https://t.me/the_Blaze_Network")
+            InlineKeyboardButton("🚑 Sᴜᴘᴘᴏʀᴛ", url="https://t.me/Blaze_Support"),
+            InlineKeyboardButton("Uᴘᴅᴀᴛᴇs 📢", url="https://t.me/the_Blaze_Network")
         ]
     ]
 )
@@ -88,8 +65,8 @@ START_BUTTONS = InlineKeyboardMarkup(
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="⌜Տᴜᴘᴘᴏʀᴛ", url="https://t.me/UNIQUE_ENGLISH_SOCIETY"),
-            InlineKeyboardButton(text="Ⴎᴘᴅᴀᴛᴇs⌟", url="https://t.me/Blaze_Support")
+            InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="https://t.me/UNIQUE_ENGLISH_SOCIETY"),
+            InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs", url="https://t.me/Blaze_Support")
         ]
     ]
 )
@@ -203,18 +180,18 @@ async def yt_audio(link):
 async def cbcmds(_, query: CallbackQuery):
     await query.answer("Commands Menu")
     await query.edit_message_text(
-        f"""➣ Hello » ** Lɪsᴛ ᴏғ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs **
-➪ /play (Song Name/Link) - Play Music
-➪ /vplay (video name/link) - Play Video
-➪ /pause - Pause The Song
-➪ /resume - Resume The Song
-➪ /skip - switch to next Song
-➪ /end - Stop The Streaming
-➪ /join - Invite Assistant To Your Group
-➪ /mute - Mute The Assistant On Voice Chat
-➪ /unmute - UnMute The Assistant On Voice Chat
-➪ /playlist - Show You The Playlist
-➪ /restart - Restart The Bot
+        f"""➣ Hᴇʟʟᴏ » ** Lɪsᴛ ᴏғ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs **
+➪  /play (Sᴏɴɢ Nᴀᴍᴇ/Lɪɴᴋ) - Pʟᴀʏ Mᴜsɪᴄ
+➪  /vplay (Vɪᴅᴇᴏ Nᴀᴍᴇ/Lɪɴᴋ) - Pʟᴀʏ Vɪᴅᴇᴏ
+➪  /pause - Pᴀᴜsᴇ Tʜᴇ Sᴏɴɢ
+➪  /resume - Rᴇsᴜᴍᴇ Tʜᴇ Sᴏɴɢ
+➪  /skip - Sᴡɪᴛᴄʜ ᴛᴏ Nᴇxᴛ Sᴏɴɢ
+➪  /end - Sᴛᴏᴘ Tʜᴇ Sᴛʀᴇᴀᴍɪɴɢ
+➪  /join - Iɴᴠɪᴛᴇ Assɪsᴛᴀɴᴛ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ
+➪  /mute - Mᴜᴛᴇ Tʜᴇ Assɪsᴛᴀɴᴛ Oɴ Vᴏɪᴄᴇ Cʜᴀᴛ
+➪  /unmute - UɴMᴜᴛᴇ Tʜᴇ Assɪsᴛᴀɴᴛ Oɴ Vᴏɪᴄᴇ Cʜᴀᴛ
+➪  /playlist - Sʜᴏᴡ Yᴏᴜ Tʜᴇ Pʟᴀʏʟɪsᴛ
+➪  /restart - Rᴇsᴛᴀʀᴛ Tʜᴇ Bᴏᴛ
 ⛦➪📢 Powered By- [Ꭲᴇᴀᴍ ᗷʟᴀᴢᴇ 🇮🇳](t.me/Team_Blaze_xD) """)
 
 
