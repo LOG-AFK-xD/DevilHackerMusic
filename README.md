@@ -25,7 +25,7 @@
 <p align="center">
     ## 𝐃𝐞𝐩𝐥𝐨𝐲 𝐎𝐧 𝐇𝐞𝐫𝐨𝐤𝐮 🚀
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/rakeshyt/DevilHackerMusic"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/log-afk-xd/DevilHackerMusic"><img align="center" alt="Heroku" width="52px" src="https://www.nicepng.com/png/full/223-2233246_heroku-logo-salesforce-heroku.png"></p>
 
 ### Method 2
 
