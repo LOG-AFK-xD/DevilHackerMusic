@@ -194,7 +194,7 @@ async def cbcmds(_, query: CallbackQuery):
 ➪  /restart - Rᴇsᴛᴀʀᴛ Tʜᴇ Bᴏᴛ
 ⛦➪📢 Powered By- [Ꭲᴇᴀᴍ ᗷʟᴀᴢᴇ 🇮🇳](t.me/Team_Blaze_xD) """,
           reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
+            [[InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")]]
         ),
     )
 
