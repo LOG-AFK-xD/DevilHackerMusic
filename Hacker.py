@@ -192,7 +192,7 @@ async def cbcmds(_, query: CallbackQuery):
 ➪  /unmute - UɴMᴜᴛᴇ Tʜᴇ Assɪsᴛᴀɴᴛ Oɴ Vᴏɪᴄᴇ Cʜᴀᴛ
 ➪  /playlist - Sʜᴏᴡ Yᴏᴜ Tʜᴇ Pʟᴀʏʟɪsᴛ
 ➪  /restart - Rᴇsᴛᴀʀᴛ Tʜᴇ Bᴏᴛ
-⛦➪📢 Powered By- [Ꭲᴇᴀᴍ ᗷʟᴀᴢᴇ 🇮🇳](t.me/Team_Blaze_xD) """)
+⛦➪📢 Powered By- [Ꭲᴇᴀᴍ ᗷʟᴀᴢᴇ 🇮🇳](t.me/Team_Blaze_xD) """,
           reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
