@@ -66,32 +66,21 @@ LIVE_CHATS = []
 
 START_TEXT = """
 ━━━━━━━━━━━━━━━━━━━━━━━━
-💥 𝙃𝙚𝙡𝙡𝙤, <b>{}</b> 𝖨 𝖺𝗆 𝖲𝗎𝗉𝖾𝗋 𝖥𝖺𝗌𝗍 𝖬𝗎𝗌𝗂𝖼 𝖯𝗅𝖺𝗒𝖾𝗋  𝖡𝗈𝗍 𝖥𝗈𝗋 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖦𝗋𝗈𝗎𝗉𝗌 𝖠𝗅𝗅𝗈𝗐 𝖸𝗈𝗎 𝖳𝗈 𝖯𝗅𝖺𝗒 𝖬𝗎𝗌𝗂𝖼 𝖠𝗇𝖽 𝖵𝗂𝖽𝖾𝗈 𝖮𝗇 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆  𝖵𝗂𝖽𝖾𝗈...
-┏━━━━━━━━━━━━━━━━━┓
-┣★
-┣★ 𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : [𝙍𝙔𝙈](https://t.me/RYMOFFICIAL)
-┣★
-┣★ 𝙎𝙪𝙥𝙥𝙤𝙧𝙩 : [𝙃𝙀𝙍𝙀](https://t.me/JaiHindChatting)
-┣★
-┗━━━━━━━━━━━━━━━━━┛
-━━━━━━━━━━━━━━━━━━━━━━━━
+⛦➪ Hello, <b>{}</b> 𝖨 𝖺𝗆 𝖲𝗎𝗉𝖾𝗋 𝖥𝖺𝗌𝗍 𝖬𝗎𝗌𝗂𝖼 𝖯𝗅𝖺𝗒𝖾𝗋  𝖡𝗈𝗍 𝖥𝗈𝗋 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆 𝖦𝗋𝗈𝗎𝗉𝗌 𝖠𝗅𝗅𝗈𝗐 𝖸𝗈𝗎 𝖳𝗈 𝖯𝗅𝖺𝗒 𝖬𝗎𝗌𝗂𝖼 𝖠𝗇𝖽 𝖵𝗂𝖽𝖾𝗈 𝖮𝗇 𝖳𝖾𝗅𝖾𝗀𝗋𝖺𝗆  𝖵𝗂𝖽𝖾𝗈...
 """
 
 START_BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("♦️ 𝘈𝘥𝘥 𝘔𝘦 𝘛𝘰 𝘠𝘰𝘶𝘳 𝘎𝘳𝘰𝘶𝘱 ♦️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+            InlineKeyboardButton("➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-            InlineKeyboardButton("📝 𝘊𝘖𝘔𝘔𝘈𝘕𝘋𝘚", callback_data="cbcmds"),
-            InlineKeyboardButton("🇮🇳 𝘋𝘌𝘝𝘌𝘓𝘖𝘗𝘌𝘙", url="https://t.me/LegendRajOp")
+            InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
+            InlineKeyboardButton(",Chitchat 📨", url="https://t.me/UNIQUE_society")
         ],
         [
-            InlineKeyboardButton("🧞‍♂ 𝘚𝘜𝘗𝘗𝘖𝘙𝘛", url="https://t.me/JaiHindChatting"),
-            InlineKeyboardButton("🔔 𝘜𝘗𝘋𝘈𝘛𝘌𝘚", url="https://t.me/RymOfficial")
-        ],
-        [
-            InlineKeyboardButton("🔒 𝘚𝘖𝘜𝘙𝘊𝘌 𝘊𝘖𝘋𝘌", url="https://github.com/rakeshyt/DevilHackerMusic")
+            InlineKeyboardButton("🚑 Support", url="https://t.me/Blaze_Support"),
+            InlineKeyboardButton("Updates 📢", url="https://t.me/the_Blaze_Network")
         ]
     ]
 )
@@ -99,8 +88,8 @@ START_BUTTONS = InlineKeyboardMarkup(
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="• 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 •", url="https://t.me/JaiHindChatting"),
-            InlineKeyboardButton(text="• 𝐔𝐏𝐃𝐀𝐓𝐄𝐒 •", url="https://t.me/RymOfficial")
+            InlineKeyboardButton(text="🚑 Support", url="https://t.me/UNIQUE_SOCIETY"),
+            InlineKeyboardButton(text="Updates 📢", url="https://t.me/Blaze_Support")
         ]
     ]
 )
@@ -214,19 +203,19 @@ async def yt_audio(link):
 async def cbcmds(_, query: CallbackQuery):
     await query.answer("Commands Menu")
     await query.edit_message_text(
-        f"""🗡️🇮🇳🗡️ 𝘏𝘦𝘭𝘭𝘰 » **𝘓𝘪𝘴𝘵 𝘖𝘧 𝘈𝘷𝘢𝘪𝘭𝘢𝘣𝘭𝘦 𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 🗡️🇮🇳🗡️**
-» /play (Song Name/Link) - Play Music
-» /vplay (video name/link) - Play Video
-» /pause - Pause The Song
-» /resume - Resume The Song
-» /skip - switch to next Song
-» /end - Stop The Streaming
-» /join - Invite Assistant To Your Group
-» /mute - Mute The Assistant On Voice Chat
-» /unmute - UnMute The Assistant On Voice Chat
-» /playlist - Show You The Playlist
-» /restart - Restart The Bot
-⚡ __𝘗𝘰𝘸𝘦𝘳𝘦𝘥 𝘉𝘺 𝘋𝘦𝘷𝘪𝘭 𝘏𝘢𝘤𝘬𝘦𝘳__""")
+        f"""➣ Hello » **List of Available Commands **
+➪ /play (Song Name/Link) - Play Music
+➪ /vplay (video name/link) - Play Video
+➪ /pause - Pause The Song
+➪ /resume - Resume The Song
+➪ /skip - switch to next Song
+➪ /end - Stop The Streaming
+➪ /join - Invite Assistant To Your Group
+➪ /mute - Mute The Assistant On Voice Chat
+➪ /unmute - UnMute The Assistant On Voice Chat
+➪ /playlist - Show You The Playlist
+➪ /restart - Restart The Bot
+⛦➪ Powered By- [TEAM BLAZE](t.me/Team_Blaze_xD) """)
 
 
 @bot.on_message(filters.command("start") & filters.private)
